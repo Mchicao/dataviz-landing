@@ -17,8 +17,19 @@
   <a class="skip" href="#contenido">Skip to content</a>
   <header class="container nav">
     <a class="brand" href="#inicio" aria-label="DataVIZ, back to top"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>DataVIZ</a>
-    <nav class="nav-links" aria-label="Main navigation"><a href="#plataforma">Platform</a><a href="#conocimiento">Knowledge</a><a href="#agentes">Agents</a></nav>
-    <div class="nav-actions"><div class="lang-switch" role="navigation" aria-label="Language"><a href="/es/" lang="es">ES</a><a href="/" lang="en" aria-current="page">EN</a></div></div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#plataforma">Platform</a>
+      <a href="#migration">Migration</a>
+      <a href="#conocimiento">Knowledge</a>
+      <a href="#agentes">Agents</a>
+      <a href="#stack">Stack</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch" role="navigation" aria-label="Language">
+        <a href="/es/" lang="es">ES</a>
+        <a href="/" lang="en" aria-current="page">EN</a>
+      </div>
+    </div>
   </header>
 
   <main id="contenido">
@@ -28,7 +39,6 @@
         <p class="lede">Connect your data, create dashboards, and work with agents that understand your business. All in one platform.</p>
         <div class="hero-actions">
           <a class="button" href="#plataforma">Explore the platform <span aria-hidden="true">→</span></a>
-          <a class="button button-ghost" href="mailto:matiaschicao@hotmail.com?subject=Demo%20Request">Request a demo</a>
         </div>
       </div>
       <div class="artifact art-table" aria-hidden="true">
@@ -59,7 +69,14 @@
 
     <section class="container thesis" aria-labelledby="thesis-title"><h2 id="thesis-title" class="reveal">Your data. Your knowledge. <em class="serif">One platform.</em></h2></section>
 
-    <aside class="migration" aria-labelledby="migration-title"><div class="container migration-inner"><div><h2 id="migration-title" class="reveal">Bring your Power BI and Tableau work.</h2><p class="reveal" style="--d:100ms">Migrate models and dashboards while preserving their meaning. Review differences and validate results.</p></div></div></aside>
+    <section class="migration" id="migration" aria-labelledby="migration-title">
+      <div class="container migration-inner">
+        <div>
+          <h2 id="migration-title" class="reveal">Direct migration from Power BI and Tableau.</h2>
+          <p class="reveal" style="--d:100ms">Import your existing .pbix, .pbip, and .twbx models without starting over. DataVIZ preserves calculated fields, relationships, and security policies in a modern git-versioned semantic layer.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="container section" id="plataforma" aria-labelledby="platform-title">
       <div class="section-heading"><div><h2 id="platform-title" class="reveal">Your own BI, from model to decision.</h2></div><p class="reveal" style="--d:120ms">Connect sources, define metrics, and share analyses. People and agents work with the same context.</p></div>
@@ -92,9 +109,56 @@
       <div class="pillars"><article class="pillar reveal"><h3>Connect and model</h3><p>Unify your sources and define consistent metrics for your team.</p></article><article class="pillar reveal" style="--d:110ms"><h3>Explore and create</h3><p>Create interactive dashboards and explore your data in the browser.</p></article><article class="pillar reveal" style="--d:220ms"><h3>Trust and operate</h3><p>Share with permissions and trace the source of every result.</p></article></div>
     </section>
 
-    <section class="knowledge-section" id="conocimiento" aria-labelledby="knowledge-title"><div class="container knowledge-inner"><div><h2 id="knowledge-title" class="reveal">Shared memory for <em class="serif">people and agents.</em></h2><p class="reveal" style="--d:100ms">Every metric keeps its definition, source, and permissions. Dashboards and agents use the same source of truth.</p></div><div class="knowledge-map" role="img" aria-label="Metrics, relationships, policies, and evidence integrated into an enterprise knowledge base"><div class="map-cell reveal"><small>Definitions</small><strong>Metrics</strong><span>What is measured and how it is calculated.</span></div><div class="map-cell reveal" style="--d:90ms"><small>Context</small><strong>Relationships</strong><span>How data and processes connect.</span></div><div class="map-cell map-core reveal" style="--d:180ms"><small>DataVIZ</small><strong>Governed knowledge</strong><span>A shared, versioned, verifiable foundation.</span></div><div class="map-cell reveal" style="--d:270ms"><small>Control</small><strong>Policies</strong><span>Who may view, propose, or approve.</span></div><div class="map-cell reveal" style="--d:360ms"><small>Trust</small><strong>Evidence</strong><span>Where every answer comes from.</span></div></div></div></section>
+    <section class="knowledge-section" id="conocimiento" aria-labelledby="knowledge-title">
+      <div class="container knowledge-inner">
+        <div>
+          <h2 id="knowledge-title" class="reveal">Shared enterprise memory for <em class="serif">people and agents.</em></h2>
+          <p class="reveal" style="--d:100ms">Every metric keeps its definition, source, and permissions. Dashboards and agents use the same source of truth.</p>
+        </div>
+        <div class="knowledge-map" role="region" aria-label="Knowledge Structure">
+          <div class="map-cell reveal">
+            <div class="map-cell-tag">Definitions</div>
+            <strong>Canonical Metrics</strong>
+            <span>Exact mathematical formulas, calculation intervals, and official currency rules.</span>
+          </div>
+          <div class="map-cell reveal" style="--d:90ms">
+            <div class="map-cell-tag">Context</div>
+            <strong>Entity Relationships</strong>
+            <span>Semantic mappings linking customers, transactions, pipelines, and products.</span>
+          </div>
+          <div class="map-cell reveal" style="--d:180ms">
+            <div class="map-cell-tag">Governance</div>
+            <strong>Access Policies</strong>
+            <span>Compile-time proofs dictating who and what can read, query, or modify data.</span>
+          </div>
+          <div class="map-cell reveal" style="--d:270ms">
+            <div class="map-cell-tag">Trust</div>
+            <strong>Verification Evidence</strong>
+            <span>Deterministic lineage logging every data warehouse execution step.</span>
+          </div>
+          <div class="map-cell map-core reveal" style="--d:360ms">
+            <div class="map-cell-tag">Unified Foundation</div>
+            <strong>DataVIZ Governed Knowledge Base</strong>
+            <span>A versioned, verifiable single source of truth stored in Git and executed with strict typing.</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <section class="container agents" id="agentes" aria-labelledby="agents-title"><div class="agents-grid"><div class="agent-copy"><h2 id="agents-title" class="reveal">Make agents <em class="serif">understand your business.</em></h2><p class="reveal" style="--d:100ms">Ask, analyze, and create with your business context. You stay in control.</p></div><div class="agent-list"><div class="agent-step reveal"><div><h3>Query with meaning</h3><p>Answers grounded in your metrics and sources.</p></div></div><div class="agent-step reveal" style="--d:90ms"><div><h3>Reason within boundaries</h3><p>Evidence-based analysis within your permissions.</p></div></div><div class="agent-step reveal" style="--d:180ms"><div><h3>Propose changes</h3><p>Models and visuals ready for your review.</p></div></div><div class="agent-step reveal" style="--d:270ms"><div><h3>Act with oversight</h3><p>Authorized actions with traceability and approval.</p></div></div></div></div></section>
+    <section class="container agents" id="agentes" aria-labelledby="agents-title">
+      <div class="agents-grid">
+        <div class="agent-copy">
+          <h2 id="agents-title" class="reveal">Make agents <em class="serif">understand your business.</em></h2>
+          <p class="reveal" style="--d:100ms">Powered by MCP (Model Context Protocol). Agents query your governed metrics with verified context and strict access control.</p>
+        </div>
+        <div class="agent-list">
+          <div class="agent-step reveal"><div><h3>Query via MCP</h3><p>Ground answers directly in your canonical metrics.</p></div></div>
+          <div class="agent-step reveal" style="--d:90ms"><div><h3>Reason within boundaries</h3><p>Deterministic analysis strictly respecting permissions.</p></div></div>
+          <div class="agent-step reveal" style="--d:180ms"><div><h3>Propose changes</h3><p>Calculations and charts ready for human review.</p></div></div>
+          <div class="agent-step reveal" style="--d:270ms"><div><h3>Act with oversight</h3><p>Traceable execution with audit logs and approval.</p></div></div>
+        </div>
+      </div>
+    </section>
 
     <section class="stack" id="stack" aria-labelledby="stack-title"><div class="container">
       <div class="stack-head">
@@ -114,7 +178,7 @@
       <p class="stack-note reveal-fade" style="--d:320ms"><span class="safe-dot" aria-hidden="true"></span>Your data is always safe, permissions, evidence, and human oversight at every layer.</p>
     </div></section>
 
-    <section class="closing" aria-labelledby="closing-title"><h2 id="closing-title" class="reveal">Turn your data <em class="serif">into decisions.</em></h2><a class="button reveal-fade" style="--d:160ms" href="mailto:matiaschicao@hotmail.com?subject=DataVIZ%20Demo">Request a demo <span aria-hidden="true">→</span></a></section>
+    <section class="closing" aria-labelledby="closing-title"><h2 id="closing-title" class="reveal">Turn your data <em class="serif">into decisions.</em></h2><a class="button reveal-fade" style="--d:160ms" href="#plataforma">Explore the platform <span aria-hidden="true">→</span></a></section>
   </main>
   <footer class="container footer"><a class="brand" href="#inicio"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>DataVIZ</a><p>Analytics, knowledge, and agents in one architecture.</p><span>Business intelligence designed for agents</span></footer>
   <script>
