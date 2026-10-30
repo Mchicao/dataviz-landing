@@ -10,7 +10,7 @@
   <title>DataVIZ · Inteligencia de negocios diseñada para agentes</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -38,200 +38,96 @@
   </header>
 
   <main id="content">
-    <!-- Hero Section -->
+    <!-- Hero Section: High-Contrast Asymmetric Split -->
     <section class="container hero" aria-labelledby="hero-title">
-      <div class="signature-badge">
-        <span class="signature-dot" aria-hidden="true"></span>
-        <span>Runtime Effect · Modelos semánticos gobernados · Seguridad en tiempo de compilación</span>
-      </div>
-      <h1 id="hero-title">La alternativa a Power BI y Tableau. <span class="serif">Diseñada para agentes.</span></h1>
-      <p class="hero-lede">Conecta tus fuentes de datos, preserva tus modelos semánticos y trabaja con agentes autónomos que razonan con contexto de negocio verificado.</p>
-      
-      <div class="hero-actions">
-        <a class="button" href="#platform">Conocer la plataforma <span aria-hidden="true">→</span></a>
-        <a class="button button-secondary" href="mailto:matiaschicao@hotmail.com?subject=DataVIZ%20Demo%20Tecnica">Pedir demo técnica</a>
-      </div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="signature-badge">
+            <span class="signature-dot" aria-hidden="true"></span>
+            <span>Runtime Effect · Modelos semánticos gobernados · Seguridad en compilación</span>
+          </div>
+          <h1 id="hero-title">La alternativa a Power BI y Tableau. <span class="serif">Diseñada para agentes.</span></h1>
+          <p class="hero-lede">Conecta tus fuentes de datos empresariales, preserva tus modelos semánticos y trabaja con agentes autónomos que razonan con contexto de negocio verificado.</p>
+          
+          <div class="hero-actions">
+            <a class="button" href="#platform">Conocer la plataforma <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="mailto:matiaschicao@hotmail.com?subject=DataVIZ%20Demo%20Tecnica">Pedir demo técnica</a>
+          </div>
 
-      <!-- The Moment: Authentic DataVIZ Studio Visual -->
-      <div class="hero-visual" role="region" aria-label="Vista previa de DataVIZ Studio">
-        <div class="studio-titlebar">
-          <div class="window-dots" aria-hidden="true">
-            <span></span><span></span><span></span>
-          </div>
-          <div class="studio-tabs">
-            <span class="studio-tab active">Cohortes ARR y Retención Neta</span>
-            <span class="studio-tab">Linaje Semántico</span>
-            <span class="studio-tab">Gobernanza de Agentes</span>
-          </div>
-          <div class="studio-status">
-            <span class="studio-status-dot"></span>
-            <span>Runtime Effect · Verificado</span>
+          <div class="hero-proofs">
+            <div class="proof-item"><span class="proof-check">✓</span> Migración directa de modelos PBIX y TWBX sin pérdida de métricas</div>
+            <div class="proof-item"><span class="proof-check">✓</span> Runtime tipado con Effect 3.0 que elimina alucinaciones en ejecución</div>
+            <div class="proof-item"><span class="proof-check">✓</span> Seguridad a nivel de fila (RLS) verificada en tiempo de compilación</div>
           </div>
         </div>
 
-        <div class="studio-body">
-          <aside class="studio-sidebar" aria-label="Catálogo del Studio">
-            <div>
-              <div class="sidebar-group-label">Catálogo Semántico</div>
-              <div class="sidebar-items">
-                <div class="sidebar-item active">
-                  <span>Ingresos y ARR</span>
-                  <span class="sidebar-item-tag">Modelo</span>
-                </div>
-                <div class="sidebar-item">
-                  <span>Retención de Clientes</span>
-                  <span class="sidebar-item-tag">Modelo</span>
-                </div>
-                <div class="sidebar-item">
-                  <span>Pipeline y Velocidad</span>
-                  <span class="sidebar-item-tag">Modelo</span>
-                </div>
-              </div>
+        <!-- The Visual: Technical Architecture Engine -->
+        <div class="architecture-card" role="region" aria-label="Arquitectura del Motor Semántico DataVIZ">
+          <div class="arch-header">
+            <div class="arch-title">
+              <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>Motor Semántico DataVIZ</span>
             </div>
-
-            <div>
-              <div class="sidebar-group-label">Fuentes de Datos</div>
-              <div class="sidebar-items">
-                <div class="sidebar-item">
-                  <span>Snowflake Prod</span>
-                  <span class="sidebar-item-tag">En vivo</span>
-                </div>
-                <div class="sidebar-item">
-                  <span>PostgreSQL Core</span>
-                  <span class="sidebar-item-tag">Sync</span>
-                </div>
-                <div class="sidebar-item">
-                  <span>Power BI Dataset</span>
-                  <span class="sidebar-item-tag">PBIX</span>
-                </div>
-              </div>
+            <div class="arch-status">
+              <span class="signature-dot" aria-hidden="true"></span>
+              <span>Verificado · Effect 3.0</span>
             </div>
+          </div>
 
-            <div>
-              <div class="sidebar-group-label">Políticas Activas</div>
-              <div class="sidebar-items">
-                <div class="sidebar-item">
-                  <span>Finanzas RLS</span>
-                  <span class="sidebar-item-tag">Aplicada</span>
-                </div>
-                <div class="sidebar-item">
-                  <span>Scope Agente: Lectura</span>
-                  <span class="sidebar-item-tag">GDP-TS</span>
-                </div>
-              </div>
+          <!-- Layer 1: Sources -->
+          <div>
+            <div class="arch-layer-label">1. Fuentes Empresariales</div>
+            <div class="arch-sources-grid">
+              <div class="arch-source-chip">Snowflake</div>
+              <div class="arch-source-chip">BigQuery</div>
+              <div class="arch-source-chip">PostgreSQL</div>
+              <div class="arch-source-chip">Power BI / Tab</div>
             </div>
-          </aside>
+          </div>
 
-          <div class="studio-content">
-            <!-- Studio Query Bar -->
-            <div class="studio-query-bar">
-              <div class="query-prompt">
-                <span class="query-agent-badge">Agente · Analista</span>
-                <span>Analizar expansión de ARR vs deserción de cohortes para clientes enterprise (&gt;$100k)</span>
+          <div class="arch-flow-arrow" aria-hidden="true">↓</div>
+
+          <!-- Layer 2: Core Semantic Hub -->
+          <div>
+            <div class="arch-layer-label">2. Hub Semántico Gobernado</div>
+            <div class="arch-core-box">
+              <div class="arch-core-head">
+                <strong>Definición Canónica de Negocio</strong>
+                <span class="arch-core-badge">AST Verificado</span>
               </div>
-              <div class="query-verify-badge">
-                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                  <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
-                </svg>
-                <span>Prueba Verificada</span>
-              </div>
-            </div>
-
-            <!-- Studio KPIs -->
-            <div class="studio-kpis">
-              <div class="kpi-card">
-                <div class="kpi-label">Ingresos Recurrentes Anuales (ARR)</div>
-                <div class="kpi-value">$24,810,400</div>
-                <div class="kpi-change positive">
-                  <span>↑ +14,2%</span>
-                  <span class="tabular">vs trimestre anterior</span>
-                </div>
-              </div>
-              <div class="kpi-card">
-                <div class="kpi-label">Retención Neta en Dólares (NDR)</div>
-                <div class="kpi-value">118,4%</div>
-                <div class="kpi-change positive">
-                  <span>↑ +3,1%</span>
-                  <span class="tabular">vs meta (115,0%)</span>
-                </div>
-              </div>
-              <div class="kpi-card">
-                <div class="kpi-label">Tasa de Certeza del Agente</div>
-                <div class="kpi-value">99,8%</div>
-                <div class="kpi-change neutral">
-                  <span>● 3.503 consultas</span>
-                  <span class="tabular">cero alucinaciones</span>
-                </div>
-              </div>
-            </div>
-
-            <!-- Studio Multi-Series Chart -->
-            <div class="studio-chart-card">
-              <div class="chart-header">
-                <div class="chart-title">Trayectoria de Expansión ARR y Retención (36 Meses)</div>
-                <div class="chart-legend">
-                  <div class="legend-item"><span class="legend-color blue"></span><span>Enterprise (&gt;$100k)</span></div>
-                  <div class="legend-item"><span class="legend-color cyan"></span><span>Mid-Market</span></div>
-                  <div class="legend-item"><span class="legend-color zinc"></span><span>Benchmark Estimado</span></div>
-                </div>
-              </div>
-              <div class="chart-svg-wrap">
-                <svg class="chart-svg" viewBox="0 0 760 160" preserveAspectRatio="none">
-                  <!-- Grid Lines -->
-                  <line x1="0" y1="30" x2="760" y2="30" class="chart-grid-line" />
-                  <line x1="0" y1="70" x2="760" y2="70" class="chart-grid-line" />
-                  <line x1="0" y1="110" x2="760" y2="110" class="chart-grid-line" />
-                  <line x1="0" y1="150" x2="760" y2="150" class="chart-grid-line" />
-
-                  <!-- Benchmark Line -->
-                  <path d="M 0 140 Q 190 120, 380 90 T 760 40" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4" />
-
-                  <!-- Mid-market line -->
-                  <path d="M 0 145 C 150 135, 300 115, 450 85 C 580 60, 680 45, 760 35" fill="none" stroke="#06b6d4" stroke-width="2" />
-
-                  <!-- Enterprise Area & Line -->
-                  <path d="M 0 148 C 120 138, 260 110, 400 75 C 540 45, 660 25, 760 12 L 760 160 L 0 160 Z" fill="rgba(59, 130, 246, 0.12)" />
-                  <path d="M 0 148 C 120 138, 260 110, 400 75 C 540 45, 660 25, 760 12" fill="none" stroke="#3b82f6" stroke-width="2.5" />
-
-                  <!-- X-Axis Labels -->
-                  <text x="10" y="156" class="chart-axis-text">Q1 2024</text>
-                  <text x="250" y="156" class="chart-axis-text">Q1 2025</text>
-                  <text x="500" y="156" class="chart-axis-text">Q1 2026</text>
-                  <text x="710" y="156" class="chart-axis-text">Q4 2026</text>
-                </svg>
-              </div>
-            </div>
-
-            <!-- Studio Bottom Split -->
-            <div class="studio-bottom-split">
-              <div class="code-box">
-                <div><span class="comm">// Medida DAX gobernada / Definición semántica</span></div>
-                <div><span class="kw">DEFINE MEASURE</span> Sales[ARR_Net_Expansion] =</div>
+              <div class="arch-code-snippet">
+                <div><span class="kw">DEFINE MEASURE</span> Ventas[ARR_Neto] =</div>
                 <div>&nbsp;&nbsp;<span class="fn">CALCULATE</span>(</div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">SUM</span>(Transactions[Amount]),</div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;Customer[Tier] = <span class="str">"Enterprise"</span>,</div>
-                <div>&nbsp;&nbsp;&nbsp;&nbsp;Policy[VerifiedProof] = <span class="kw">true</span></div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">SUM</span>(Transacciones[Monto]),</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;Cliente[Segmento] = <span class="str">"Enterprise"</span></div>
                 <div>&nbsp;&nbsp;)</div>
               </div>
-
-              <div class="agent-trace-card">
-                <div>
-                  <div class="trace-title">
-                    <span>Traza de Gobernanza del Agente</span>
-                    <span class="tabular">Tarea #8410</span>
-                  </div>
-                  <div class="trace-body">
-                    Consulta ejecutada dentro del límite de tenant verificado. AST semántico contrastado contra 4 políticas empresariales. Cero datos sensibles expuestos.
-                  </div>
-                </div>
-                <div class="trace-meta">
-                  <span>Latencia: 28ms</span>
-                  <span>Motor: Effect v3.0</span>
-                  <span>Estado: Determinístico</span>
-                </div>
+              <div class="arch-core-policies">
+                <span class="policy-tag">✓ Política RLS: Aplicada</span>
+                <span class="policy-tag">✓ Prueba GDP-TS: Validada</span>
               </div>
             </div>
+          </div>
 
+          <div class="arch-flow-arrow" aria-hidden="true">↓</div>
+
+          <!-- Layer 3: Dual Consumers -->
+          <div>
+            <div class="arch-layer-label">3. Ejecución Dual en Paridad</div>
+            <div class="arch-outputs-grid">
+              <div class="arch-output-box">
+                <strong>Analistas y Usuarios</strong>
+                <p>Dashboards analíticos web interactivos, exploración y reportes ejecutivos.</p>
+              </div>
+              <div class="arch-output-box">
+                <strong>Agentes Autónomos</strong>
+                <p>Consultas en lenguaje de negocio compiladas a DAX determinístico sin alucinación.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="arch-footer">
+            Única fuente matemática de verdad compartida entre personas y agentes.
           </div>
         </div>
       </div>
@@ -252,7 +148,7 @@
           <p>Importa tus modelos existentes en .pbix, .pbip y .twbx sin comenzar desde cero. DataVIZ preserva campos calculados, relaciones y políticas de acceso en una capa semántica versionable con Git.</p>
           <a class="button button-secondary" href="mailto:matiaschicao@hotmail.com?subject=Evaluacion%20de%20Migracion">Pedir evaluación de migración →</a>
         </div>
-        <div class="migration-comparison-box">
+        <div class="migration-table">
           <div class="comp-row comp-header">
             <span>Capacidad</span>
             <span>BI Tradicional (Power BI / Tableau)</span>
@@ -287,81 +183,6 @@
       <div class="section-head">
         <h2 id="platform-title">Desde el almacén de datos a la decisión informada.</h2>
         <p>Una arquitectura unificada que conecta almacenes de datos analíticos a una capa semántica compartida, utilizada en paridad por analistas y agentes autónomos.</p>
-      </div>
-
-      <!-- Architecture Pipeline -->
-      <div class="pipeline-canvas" role="region" aria-label="Arquitectura del Pipeline DataVIZ">
-        <div class="pipeline-grid">
-          <!-- Column 1: Sources -->
-          <div>
-            <div class="p-column-title">Fuentes Empresariales</div>
-            <div class="p-stack">
-              <div class="p-node">
-                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
-                <span>Snowflake</span>
-              </div>
-              <div class="p-node">
-                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
-                <span>BigQuery</span>
-              </div>
-              <div class="p-node">
-                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
-                <span>PostgreSQL</span>
-              </div>
-              <div class="p-node">
-                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
-                <span>Power BI / Tableau</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Connector 1 -->
-          <div class="p-connector" aria-hidden="true">
-            <svg viewBox="0 0 48 180">
-              <path d="M 0 30 C 24 30, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
-              <path d="M 0 65 C 24 65, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
-              <path d="M 0 115 C 24 115, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
-              <path d="M 0 150 C 24 150, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
-            </svg>
-          </div>
-
-          <!-- Column 2: DataVIZ Core Hub -->
-          <div>
-            <div class="p-core-hub">
-              <div class="p-core-badge">Hub Semántico Gobernado</div>
-              <strong>Motor de Conocimiento Empresarial</strong>
-              <p>Métricas canónicas · Linaje verificado · Pruebas de seguridad en compilación · Runtime Effect tipado</p>
-            </div>
-          </div>
-
-          <!-- Connector 2 -->
-          <div class="p-connector" aria-hidden="true">
-            <svg viewBox="0 0 48 180">
-              <path d="M 0 90 C 24 90, 24 45, 48 45" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
-              <path d="M 0 90 C 24 90, 24 135, 48 135" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
-            </svg>
-          </div>
-
-          <!-- Column 3: Outputs -->
-          <div>
-            <div class="p-column-title">Consumidores Unificados</div>
-            <div class="p-stack">
-              <div class="p-output-card">
-                <strong>Analistas y Usuarios</strong>
-                <span>Canvas interactivo, dashboards exploratorios, reportes ejecutivos</span>
-              </div>
-              <div class="p-output-card">
-                <strong>Agentes Autónomos</strong>
-                <span>Consultas con contexto, análisis automatizados, propuestas de modelos verificadas</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="pipeline-foot">
-          <span class="signature-dot" aria-hidden="true"></span>
-          <span>Cero alucinaciones · Linaje de extremo a extremo · Seguridad estricta por fila (RLS)</span>
-        </div>
       </div>
 
       <!-- Pillars -->
