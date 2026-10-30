@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8fafc">
+  <meta name="description" content="DataVIZ: Business intelligence with a governed semantic layer designed for people and autonomous agents.">
+  <link rel="alternate" hreflang="es" href="https://dataviz.matiaschicao.cl/es/">
+  <link rel="alternate" hreflang="en" href="https://dataviz.matiaschicao.cl/">
+  <title>DataVIZ · Business intelligence designed for agents</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+
+  <header class="container nav">
+    <a class="brand" href="/" aria-label="DataVIZ home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      DataVIZ
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#platform">Platform</a>
+      <a href="#migration">Migration</a>
+      <a href="#knowledge">Knowledge</a>
+      <a href="#agents">Agents</a>
+      <a href="#stack">Stack</a>
+    </nav>
+    <div class="nav-actions">
+      <div class="lang-switch" role="navigation" aria-label="Language selector">
+        <a href="/es/" lang="es">ES</a>
+        <a href="/" lang="en" aria-current="page">EN</a>
+      </div>
+      <a class="button button-sm" href="mailto:matiaschicao@hotmail.com?subject=Demo%20Request">Request demo</a>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- Hero Section -->
+    <section class="container hero" aria-labelledby="hero-title">
+      <div class="signature-badge">
+        <span class="signature-dot" aria-hidden="true"></span>
+        <span>Effect runtime · Governed semantic models · Compile-time security</span>
+      </div>
+      <h1 id="hero-title">The alternative to Power BI and Tableau. <span class="serif">Built for agents.</span></h1>
+      <p class="hero-lede">Connect enterprise data sources, preserve your semantic models, and empower agents that reason with verified business context.</p>
+      
+      <div class="hero-actions">
+        <a class="button" href="#platform">Explore the platform <span aria-hidden="true">→</span></a>
+        <a class="button button-secondary" href="mailto:matiaschicao@hotmail.com?subject=DataVIZ%20Technical%20Demo">Request technical demo</a>
+      </div>
+
+      <!-- The Moment: Authentic DataVIZ Studio Visual -->
+      <div class="hero-visual" role="region" aria-label="DataVIZ Studio Interface Preview">
+        <div class="studio-titlebar">
+          <div class="window-dots" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="studio-tabs">
+            <span class="studio-tab active">ARR Cohorts &amp; Net Retention</span>
+            <span class="studio-tab">Semantic Lineage</span>
+            <span class="studio-tab">Agent Governance</span>
+          </div>
+          <div class="studio-status">
+            <span class="studio-status-dot"></span>
+            <span>Effect Runtime · Verified</span>
+          </div>
+        </div>
+
+        <div class="studio-body">
+          <aside class="studio-sidebar" aria-label="Studio Catalog">
+            <div>
+              <div class="sidebar-group-label">Semantic Catalog</div>
+              <div class="sidebar-items">
+                <div class="sidebar-item active">
+                  <span>Revenue &amp; ARR</span>
+                  <span class="sidebar-item-tag">Model</span>
+                </div>
+                <div class="sidebar-item">
+                  <span>Customer Retention</span>
+                  <span class="sidebar-item-tag">Model</span>
+                </div>
+                <div class="sidebar-item">
+                  <span>Pipeline &amp; Velocity</span>
+                  <span class="sidebar-item-tag">Model</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-group-label">Data Sources</div>
+              <div class="sidebar-items">
+                <div class="sidebar-item">
+                  <span>Snowflake Prod</span>
+                  <span class="sidebar-item-tag">Live</span>
+                </div>
+                <div class="sidebar-item">
+                  <span>PostgreSQL Core</span>
+                  <span class="sidebar-item-tag">Sync</span>
+                </div>
+                <div class="sidebar-item">
+                  <span>Power BI Dataset</span>
+                  <span class="sidebar-item-tag">PBIX</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="sidebar-group-label">Active Policies</div>
+              <div class="sidebar-items">
+                <div class="sidebar-item">
+                  <span>Finance RLS</span>
+                  <span class="sidebar-item-tag">Enforced</span>
+                </div>
+                <div class="sidebar-item">
+                  <span>Agent Scope: Read</span>
+                  <span class="sidebar-item-tag">GDP-TS</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+
+          <div class="studio-content">
+            <!-- Studio Query Bar -->
+            <div class="studio-query-bar">
+              <div class="query-prompt">
+                <span class="query-agent-badge">Agent · Analyst</span>
+                <span>Analyze ARR expansion vs cohort attrition for enterprise customers (&gt;$100k)</span>
+              </div>
+              <div class="query-verify-badge">
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z" clip-rule="evenodd" />
+                </svg>
+                <span>Proof Verified</span>
+              </div>
+            </div>
+
+            <!-- Studio KPIs -->
+            <div class="studio-kpis">
+              <div class="kpi-card">
+                <div class="kpi-label">Annual Recurring Revenue</div>
+                <div class="kpi-value">$24,810,400</div>
+                <div class="kpi-change positive">
+                  <span>↑ +14.2%</span>
+                  <span class="tabular">vs previous quarter</span>
+                </div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label">Net Dollar Retention</div>
+                <div class="kpi-value">118.4%</div>
+                <div class="kpi-change positive">
+                  <span>↑ +3.1%</span>
+                  <span class="tabular">vs target (115.0%)</span>
+                </div>
+              </div>
+              <div class="kpi-card">
+                <div class="kpi-label">Agent Grounding Score</div>
+                <div class="kpi-value">99.8%</div>
+                <div class="kpi-change neutral">
+                  <span>● 3,503 queries</span>
+                  <span class="tabular">zero hallucinations</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Studio Multi-Series Chart -->
+            <div class="studio-chart-card">
+              <div class="chart-header">
+                <div class="chart-title">ARR Expansion &amp; Retention Trajectory (36 Months)</div>
+                <div class="chart-legend">
+                  <div class="legend-item"><span class="legend-color blue"></span><span>Enterprise (&gt;$100k)</span></div>
+                  <div class="legend-item"><span class="legend-color cyan"></span><span>Mid-Market</span></div>
+                  <div class="legend-item"><span class="legend-color zinc"></span><span>Forecast Benchmark</span></div>
+                </div>
+              </div>
+              <div class="chart-svg-wrap">
+                <svg class="chart-svg" viewBox="0 0 760 160" preserveAspectRatio="none">
+                  <!-- Grid Lines -->
+                  <line x1="0" y1="30" x2="760" y2="30" class="chart-grid-line" />
+                  <line x1="0" y1="70" x2="760" y2="70" class="chart-grid-line" />
+                  <line x1="0" y1="110" x2="760" y2="110" class="chart-grid-line" />
+                  <line x1="0" y1="150" x2="760" y2="150" class="chart-grid-line" />
+
+                  <!-- Benchmark Line -->
+                  <path d="M 0 140 Q 190 120, 380 90 T 760 40" fill="none" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4" />
+
+                  <!-- Mid-market line -->
+                  <path d="M 0 145 C 150 135, 300 115, 450 85 C 580 60, 680 45, 760 35" fill="none" stroke="#06b6d4" stroke-width="2" />
+
+                  <!-- Enterprise Area & Line -->
+                  <path d="M 0 148 C 120 138, 260 110, 400 75 C 540 45, 660 25, 760 12 L 760 160 L 0 160 Z" fill="rgba(59, 130, 246, 0.12)" />
+                  <path d="M 0 148 C 120 138, 260 110, 400 75 C 540 45, 660 25, 760 12" fill="none" stroke="#3b82f6" stroke-width="2.5" />
+
+                  <!-- X-Axis Labels -->
+                  <text x="10" y="156" class="chart-axis-text">Q1 2024</text>
+                  <text x="250" y="156" class="chart-axis-text">Q1 2025</text>
+                  <text x="500" y="156" class="chart-axis-text">Q1 2026</text>
+                  <text x="710" y="156" class="chart-axis-text">Q4 2026</text>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Studio Bottom Split -->
+            <div class="studio-bottom-split">
+              <div class="code-box">
+                <div><span class="comm">// Governed DAX / Semantic definition</span></div>
+                <div><span class="kw">DEFINE MEASURE</span> Sales[ARR_Net_Expansion] =</div>
+                <div>&nbsp;&nbsp;<span class="fn">CALCULATE</span>(</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">SUM</span>(Transactions[Amount]),</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;Customer[Tier] = <span class="str">"Enterprise"</span>,</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;Policy[VerifiedProof] = <span class="kw">true</span></div>
+                <div>&nbsp;&nbsp;)</div>
+              </div>
+
+              <div class="agent-trace-card">
+                <div>
+                  <div class="trace-title">
+                    <span>Agent Governance Trace</span>
+                    <span class="tabular">Task #8410</span>
+                  </div>
+                  <div class="trace-body">
+                    Agent query executed within verified tenant boundary. Semantic AST checked against 4 enterprise policies. Zero unmasked PII exposed.
+                  </div>
+                </div>
+                <div class="trace-meta">
+                  <span>Latency: 28ms</span>
+                  <span>Engine: Effect v3.0</span>
+                  <span>Status: Deterministic</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thesis -->
+    <section class="thesis" aria-labelledby="thesis-title">
+      <div class="container">
+        <h2 id="thesis-title">Your data. Your knowledge. <span class="serif">One platform.</span></h2>
+      </div>
+    </section>
+
+    <!-- Migration Section -->
+    <section class="migration-section" id="migration" aria-labelledby="migration-title">
+      <div class="container migration-grid">
+        <div class="migration-copy">
+          <h2 id="migration-title">Direct migration from Power BI and Tableau.</h2>
+          <p>Import your existing .pbix, .pbip, and .twbx models without starting over. DataVIZ preserves calculated fields, relationships, and security policies in a modern git-versioned semantic layer.</p>
+          <a class="button button-secondary" href="mailto:matiaschicao@hotmail.com?subject=Migration%20Assessment">Request migration assessment →</a>
+        </div>
+        <div class="migration-comparison-box">
+          <div class="comp-row comp-header">
+            <span>Capability</span>
+            <span>Legacy BI (Power BI / Tableau)</span>
+            <span>DataVIZ Agent Platform</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-feature">Agent Readiness</span>
+            <span class="comp-legacy">Opaque proprietary files</span>
+            <span class="comp-dataviz">Native AST &amp; JSON-LD lineage</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-feature">Version Control</span>
+            <span class="comp-legacy">Manual check-ins &amp; merge locks</span>
+            <span class="comp-dataviz">Pure Git branches &amp; PR reviews</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-feature">Runtime Safety</span>
+            <span class="comp-legacy">Runtime silent errors</span>
+            <span class="comp-dataviz">Effect-backed typed execution</span>
+          </div>
+          <div class="comp-row">
+            <span class="comp-feature">Governance</span>
+            <span class="comp-legacy">Dispersed workbook measures</span>
+            <span class="comp-dataviz">Central compile-time permissions</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Section -->
+    <section class="platform-section container" id="platform" aria-labelledby="platform-title">
+      <div class="section-head">
+        <h2 id="platform-title">From raw warehouse to governed decision.</h2>
+        <p>A unified architecture that connects live data warehouses to a shared semantic layer used equally by human analysts and autonomous agents.</p>
+      </div>
+
+      <!-- Architecture Pipeline -->
+      <div class="pipeline-canvas" role="region" aria-label="DataVIZ Architecture Pipeline">
+        <div class="pipeline-grid">
+          <!-- Column 1: Sources -->
+          <div>
+            <div class="p-column-title">Enterprise Sources</div>
+            <div class="p-stack">
+              <div class="p-node">
+                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
+                <span>Snowflake</span>
+              </div>
+              <div class="p-node">
+                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
+                <span>BigQuery</span>
+              </div>
+              <div class="p-node">
+                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="p-node">
+                <svg class="p-node-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Z"/></svg>
+                <span>Power BI / Tableau</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connector 1 -->
+          <div class="p-connector" aria-hidden="true">
+            <svg viewBox="0 0 48 180">
+              <path d="M 0 30 C 24 30, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M 0 65 C 24 65, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M 0 115 C 24 115, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M 0 150 C 24 150, 24 90, 48 90" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+
+          <!-- Column 2: DataVIZ Core Hub -->
+          <div>
+            <div class="p-core-hub">
+              <div class="p-core-badge">Governed Semantic Hub</div>
+              <strong>Enterprise Knowledge Engine</strong>
+              <p>Canonical metrics · Verified lineage · Compile-time security proofs · Typed Effect runtime</p>
+            </div>
+          </div>
+
+          <!-- Connector 2 -->
+          <div class="p-connector" aria-hidden="true">
+            <svg viewBox="0 0 48 180">
+              <path d="M 0 90 C 24 90, 24 45, 48 45" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M 0 90 C 24 90, 24 135, 48 135" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="3 3"/>
+            </svg>
+          </div>
+
+          <!-- Column 3: Outputs -->
+          <div>
+            <div class="p-column-title">Unified Consumers</div>
+            <div class="p-stack">
+              <div class="p-output-card">
+                <strong>Human Analysts</strong>
+                <span>Interactive canvas, exploratory dashboards, executive reports</span>
+              </div>
+              <div class="p-output-card">
+                <strong>Autonomous Agents</strong>
+                <span>Contextual queries, automated analysis, verified model proposals</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pipeline-foot">
+          <span class="signature-dot" aria-hidden="true"></span>
+          <span>Zero hallucinations · End-to-end lineage · Strict row-level security</span>
+        </div>
+      </div>
+
+      <!-- Pillars -->
+      <div class="pillars">
+        <article class="pillar">
+          <h3>Connect and model</h3>
+          <p>Unify siloed data warehouses into version-controlled semantic definitions that are readable by humans and parseable by code.</p>
+        </article>
+        <article class="pillar">
+          <h3>Explore and author</h3>
+          <p>Build interactive analytical dashboards directly in the browser with high-performance vector rendering and sub-second latencies.</p>
+        </article>
+        <article class="pillar">
+          <h3>Operate with governance</h3>
+          <p>Deploy with compile-time security proofs, granular row-level access control, and complete audit trails for every query executed.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Knowledge Section -->
+    <section class="knowledge-section" id="knowledge" aria-labelledby="knowledge-title">
+      <div class="container knowledge-inner">
+        <div class="knowledge-copy">
+          <h2 id="knowledge-title">Shared enterprise memory for <span class="serif">people and agents.</span></h2>
+          <p>When an analyst and an AI agent look at a metric, they must get the exact same number and the exact same formula. DataVIZ ensures canonical business definitions that eliminate conflicting spreadsheets and rogue queries.</p>
+        </div>
+
+        <div class="knowledge-map" role="region" aria-label="Knowledge Structure">
+          <div class="map-cell">
+            <div class="map-cell-tag">Definitions</div>
+            <strong>Canonical Metrics</strong>
+            <span>Exact mathematical formulas, calculation intervals, and official currency rules.</span>
+          </div>
+          <div class="map-cell">
+            <div class="map-cell-tag">Context</div>
+            <strong>Entity Relationships</strong>
+            <span>Semantic mappings linking customers, transactions, pipelines, and products.</span>
+          </div>
+          <div class="map-cell">
+            <div class="map-cell-tag">Governance</div>
+            <strong>Access Policies</strong>
+            <span>Compile-time proofs dictating who and what can read, query, or modify data.</span>
+          </div>
+          <div class="map-cell">
+            <div class="map-cell-tag">Trust</div>
+            <strong>Verification Evidence</strong>
+            <span>Deterministic lineage logging every data warehouse execution step.</span>
+          </div>
+          <div class="map-cell full">
+            <div class="map-cell-tag">Unified Foundation</div>
+            <strong>DataVIZ Governed Knowledge Base</strong>
+            <span>A versioned, verifiable single source of truth stored in Git and executed with strict typing.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section class="agents-section container" id="agents" aria-labelledby="agents-title">
+      <div class="agents-grid">
+        <div class="agents-copy">
+          <h2 id="agents-title">Agents that understand <span class="serif">your business semantics.</span></h2>
+          <p>Instead of guessing schema column names or writing unbounded SQL queries, agents query through DataVIZ's governed semantic layer with guardrails and human verification.</p>
+          <a class="button button-secondary" href="mailto:matiaschicao@hotmail.com?subject=Agent%20Integration">Explore agent SDK →</a>
+        </div>
+
+        <div class="agent-steps">
+          <div class="agent-step-card">
+            <div class="step-number">01</div>
+            <div>
+              <h3>Query with semantic intent</h3>
+              <p>Agents ask questions using business vocabulary. DataVIZ compiles their intent into deterministic SQL and DAX queries.</p>
+            </div>
+          </div>
+          <div class="agent-step-card">
+            <div class="step-number">02</div>
+            <div>
+              <h3>Reason within verified boundaries</h3>
+              <p>Every agent query is filtered by row-level permissions and tenant policies before hitting the database engine.</p>
+            </div>
+          </div>
+          <div class="agent-step-card">
+            <div class="step-number">03</div>
+            <div>
+              <h3>Propose governed changes</h3>
+              <p>Agents can author proposed dashboard widgets, calculated measures, or forecasts for human review and approval.</p>
+            </div>
+          </div>
+          <div class="agent-step-card">
+            <div class="step-number">04</div>
+            <div>
+              <h3>Audit every execution</h3>
+              <p>Complete traceability with execution logs, token usage, cost tracking, and mathematical proof of calculation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack Section -->
+    <section class="stack-section" id="stack" aria-labelledby="stack-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="stack-title">Built on an uncompromising stack. <span class="serif">No silent failures.</span></h2>
+          <p>DataVIZ is built end-to-end in TypeScript and Effect, delivering mathematical correctness, typed errors, and compile-time authorization guarantees.</p>
+        </div>
+
+        <div class="stack-grid">
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 24 24"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"/></svg>
+              <span>TypeScript 5.8</span>
+            </h3>
+            <p>Strict types across models, queries, and client components. One unified source of truth.</p>
+          </article>
+
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 24 24"><path d="M11.846.007a.8.8 0 0 0-.312.103L.454 6.346a.8.8 0 0 0-.397.855.8.8 0 0 0 .408.78L3.99 9.976 1.033 11.64a.76.76 0 0 0-.374.838c-.033.265.07.541.378.715l10.546 5.967a.8.8 0 0 0 .61.073.8.8 0 0 0 .27-.094l10.548-5.968c.31-.175.412-.454.376-.72a.76.76 0 0 0-.383-.79l-3.01-1.693 3.554-2.012a.8.8 0 0 0 .399-.836.8.8 0 0 0-.412-.753L12.455.13a.8.8 0 0 0-.28-.097.8.8 0 0 0-.227-.033"/></svg>
+              <span>Effect 3.0</span>
+            </h3>
+            <p>Typed errors, automatic retries, and timeout handling. Failures are handled explicitly, never ignored.</p>
+          </article>
+
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 1.5a6.5 6.5 0 1 1 0 13 6.5 6.5 0 0 1 0-13Zm0 2a1 1 0 0 0-1 1v4a1 1 0 0 0 .293.707l2.5 2.5a1 1 0 0 0 1.414-1.414L8.5 8.086V4.5a1 1 0 0 0-1-1Z"/></svg>
+              <span>GDP-TS Proofs</span>
+            </h3>
+            <p>Compile-time authorization: queries refuse to compile without an authenticated permission proof.</p>
+          </article>
+
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 16 16"><path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 2a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z"/></svg>
+              <span>Row-Level Security</span>
+            </h3>
+            <p>Multi-tenant authorization applied directly at the database translation layer.</p>
+          </article>
+
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <span>Git-Native Semantic</span>
+            </h3>
+            <p>Every metric, visual, and relationship lives in readable code that can be reviewed in Pull Requests.</p>
+          </article>
+
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 16 16"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z"/></svg>
+              <span>Ultracite Linter</span>
+            </h3>
+            <p>Continuous automated linting preventing AI slop and enforcing clean software architecture.</p>
+          </article>
+
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              <span>Aikido Safe Chain</span>
+            </h3>
+            <p>Supply chain security preventing malicious package injections in production builds.</p>
+          </article>
+
+          <article class="stack-card">
+            <h3>
+              <svg class="stack-icon" viewBox="0 0 16 16"><path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0Zm0 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2Z"/></svg>
+              <span>Adversarial AI Audits</span>
+            </h3>
+            <p>Cross-model reviews (Claude, GPT, Gemini) challenging metric models before human sign-off.</p>
+          </article>
+        </div>
+
+        <div class="stack-footnote">
+          <span class="signature-dot" aria-hidden="true"></span>
+          <span>Enterprise grade: TLS in transit, AES-256 at rest, SOC2 Type II compliant architecture.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing Section -->
+    <section class="closing-section container" aria-labelledby="closing-title">
+      <h2 id="closing-title">Turn your enterprise data <span class="serif">into verifiable decisions.</span></h2>
+      <a class="button" href="mailto:matiaschicao@hotmail.com?subject=DataVIZ%20Demo">
+        Request a personalized demo <span aria-hidden="true">→</span>
+      </a>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      DataVIZ
+    </div>
+    <p class="footer-copy">Enterprise analytics, semantic knowledge, and autonomous agents.</p>
+    <span>© 2026 DataVIZ. All rights reserved.</span>
+  </footer>
+</body>
+</html>

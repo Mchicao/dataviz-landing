@@ -1,0 +1,4 @@
+.vercel
+.cache
+output
+*.log
